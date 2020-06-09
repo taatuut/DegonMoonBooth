@@ -8,7 +8,7 @@ const axios = require('axios');
 router.get('/', (req, res, next) => {
 //  axios.get('http://degonmoon-backend:8080/javascripts/listCollections.js')
   axios.get('https://www.basaltaura.nl/')
-    .then(data => res.send(data))
+    .then(data => res.send(JSON.stringify(data)))
     .catch(err => next(err));
 })
 
