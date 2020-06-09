@@ -18,9 +18,9 @@ axios.get('https://postman-echo.com/ip')
 
 //  axios.get('http://degonmoon-backend:8080/javascripts/listCollections.js')
 axios.get('https://postman-echo.com/ip')
-  .then((res) => {
-      console.log(res);
-      res.send(data);
+  .then((response) => {
+      console.log(response);
+      res.send(response);
   })
   .catch((error) => {
       if (error.response) {
