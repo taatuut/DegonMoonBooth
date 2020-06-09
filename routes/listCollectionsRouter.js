@@ -5,12 +5,10 @@ var router = express.Router();
 const axios = require('axios');
  
 /* GET listCollections from backend. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
   axios.get('http://degonmoon-backend:8080/javascripts/listCollections.js')
     .then(data => res.send(data))
     .catch(err => next(err));
-  });
-});
-
+})
 
 module.exports = router;
