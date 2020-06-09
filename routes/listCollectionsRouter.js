@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var request = require('request');
 
 /* GET listCollections from backend. */
 router.get('/', function(req, res, next) {
