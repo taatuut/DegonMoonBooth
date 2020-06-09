@@ -20,7 +20,7 @@ axios.get('https://postman-echo.com/ip')
 axios.get('https://postman-echo.com/ip')
   .then((response) => {
       console.log(response);
-      res.send(response);
+      res.send(response.data);
   })
   .catch((error) => {
       if (error.response) {
